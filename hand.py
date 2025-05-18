@@ -1,6 +1,8 @@
-from utils import *
-from exceptions import *
-from ranker import *
+import numpy as np
+
+from PokerOddsCalc.utils import *
+from PokerOddsCalc.exceptions import *
+from PokerOddsCalc.ranker import *
 
 
 
@@ -9,7 +11,7 @@ class Hand:
     def __init__(self, hand_limit=2):
 
         self.hand_limit = hand_limit
-        self.card_arr = np.zeros(shape=(0, hand_limit), dtype=np.int)
+        self.card_arr = np.zeros(shape=(0, hand_limit), dtype=np.int_)
 
     def add_cards(self, cards):
 
